@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Pessoal</title>
+    <style>
+       body{
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         background-color: #ffffff;
+         color: #3333333;
+         margin: 0;
+         padding: 0;
+       }
+       header, nav, main, footer{
+         padding: 1rem;
+         margin:auto;
+         max-width: 960px;
+       }
+       header{
+         background-color: #004466;
+         color: white;
+       }
+       nav a {
+         margin-right: 15px;
+         color:white;
+         text-decoration: none;
+       }
+       nav a:focus, nav a:hover{
+         text-decoration: underline;
+       }
+       main{
+         padding-top:1rem;
+       }
+       section {
+         margin-bottom:2rem;
+       }
+       h1, h2{
+         color: #004466;
+       }
+       img{
+         max-width: 100%;
+         height:auto;
+       }
+       footer{
+         background-color: #eeeeeee;
+         text-align:center;
+         font-size:0.9rem;
+       }
+       .visually-hidden{
+         position: absolute;
+         left: -10000px;
+         top:auto;
+         width: 1px;
+         height:1px;
+         overflow:hidden;
+       }
+       </style>
+  </head>
+  <body>    
+    <header>
+      <h1>Meu Portifólio</h1>
+      <nav aria-label="Menu Principal">
+        <a href="#sobre"> Sobre Mim</a>
+        <a href="projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section id="sobre">
+          <h2>Sobre Mim</h2>
+          <p>Olá meu nome é [nome], sou estudante de T.I com foco em 
+          acessibilidade e usabilidade web</p>
+          <img src="">
+      </section>
+      
+      <section id="projetos">
+        <h2> Projetos</h2>
+        <article>
+          <h3>Projeto Pessoal</h3>
+          <p> Desenvolvi um site com foco total em acessibilidade
+          seguindo as diretrizes do Projeto de Interface</p>
+        </article>
+      </section>
+      
+      <section id="contato">
+        <h2>Contato</h2>
+        <form aria-label="Formulário de contato">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome"/>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
